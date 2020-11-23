@@ -90,7 +90,7 @@ defaultContentLanguage: de
 # localhost should automatically work.
 #
 # Example: https://status.example.com/
-baseURL: http://status.dc-pro.de
+baseURL: http://status.dc-pro.de/
 
 ############################################################
 # +------------------------------------------------------+ #
@@ -121,10 +121,12 @@ params:
   # For help, see the wiki:
   # https://github.com/cstate/cstate/wiki/Customization
   categories:
-    - name: Am Tower
+    - name: Nürnberg
       description: The main servers are located here.
-      closed: true
-    - name: Am Tower   
+      closed: false
+    - name: München
+      description: München
+      closed: false
     - name: Uncategorized
       untitled: true
 
@@ -134,9 +136,9 @@ params:
   # For help, see the wiki:
   # https://github.com/cstate/cstate/wiki/Customization
   systems:
-    - name: Gateway
-      category: Am Tower
-    - name: Backup Gateway
+    - name: Uplink
+      category: Nürnberg
+    - name: Uplink Telekom
       category: München
     - name: API
       description: The guts of the application.
@@ -170,7 +172,7 @@ params:
   #
   # Default: `yearly`
   # STRING; `monthly`, `yearly`, `none`
-  incidentHistoryFormat: "yearly"
+  incidentHistoryFormat: "monthly"
 
   # Should incident history be hidden?
   #
@@ -228,8 +230,8 @@ params:
   # Format:
   # customTabs:
   #  -
-  #    name: Name
-  #    link: https://example.com
+  name: Homepage
+  link: https://cloud.kienel.training
 
   # Disable complex server-side
   # calculations that may impact
