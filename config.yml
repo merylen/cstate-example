@@ -3,19 +3,6 @@
 # |                       Notes                          | #
 # +------------------------------------------------------+ #
 ############################################################
-
-# Welcome to the cState configuration file!
-#
-# If you are using an earlier version, or one
-# in the future, such as v8.0 you may see errors
-# pop up when deploying a cState website.
-#
-# Now, onto the fun part.
-#
-# Hugo is used for building the status page,
-# so this file can be used to change how
-# your status page should behave or look.
-#
 # If you want to use special characters,
 # such as accented letters, you MUST save
 # the file as UTF-8, not ANSI.
@@ -43,7 +30,7 @@
 
 # What is your status page called?
 # Shows up in the browser bar and meta tags
-title: merylen Status
+title: IP Exchange Status
 
 # Should posts, which have a publish date
 # from the future, be built? Useful for
@@ -121,14 +108,12 @@ params:
   # For help, see the wiki:
   # https://github.com/cstate/cstate/wiki/Customization
   categories:
-    - name: Nürnberg
-      description: The main servers are located here.
+    - name: Standort Nürnberg
+      description: Standort Nürnberg
       closed: false
-    - name: München
-      description: München
+    - name: Standort München
+      description: Standort München
       closed: false
-    - name: Uncategorized
-      untitled: true
 
   # These are your systems. Change them to
   # change the amount of components.
@@ -136,17 +121,22 @@ params:
   # For help, see the wiki:
   # https://github.com/cstate/cstate/wiki/Customization
   systems:
-    - name: Uplink
+    - name: Infrastruktur Nürnberg
       category: Nürnberg
-    - name: Uplink Telekom
+    - name: Infrastruktur München
       category: München
-    - name: API
-      description: The guts of the application.
-      category: Uncategorized
-    - name: Media Proxy
-      description: This is the service responsible for serving images, audio, and video. It is reliant on our CDN.
-      category: Uncategorized
-
+    - name: Netzwerk
+      category: Nürnberg
+    - name: Intern
+      category: Nürnberg
+    - name: Hotline
+      category: Nürnberg
+    - name: Security
+      category: Nürnberg
+    - name: Security
+      category: München
+      
+      
   # What date format to use?
   #
   # Hugo formatting docs:
@@ -216,22 +206,23 @@ params:
   #
   # Recommended: png, bmp, jpg, or gif
   # for best browser support!
-  logo: logo.png
+  logo: ipex.png
 
   # This is the description that is shown
   # on the footer and meta tags.
   #
   # Default: We continuously monitor the status of our services and if there are any interruptions, a note will be posted here.
-  description: We continuously monitor the status of our services and if there are any interruptions, a note will be posted here.
+  description: Wir monitoren unsere Dienste durchgehend und stellen hier den aktuellen Status da.
 
   # Tabs on homepage
   # Uncomment to enable.
   #
-  # Format:
-  # customTabs:
-  #  -
-  name: Homepage
-  link: https://cloud.kienel.training
+  # Format:  
+  customTabs:
+    - name: Homepage
+      link: https://www.ip-exchange.de
+    - name: Serviceinterface
+      link: https://service.ext-dc.de
 
   # Disable complex server-side
   # calculations that may impact
@@ -307,7 +298,7 @@ params:
   # the value to the default:
   #
   # Default: UA-00000000-1
-  googleAnalytics: UA-00000000-1
+  # googleAnalytics: UA-00000000-1
 
 # These options affect the core of cState.
 # Please do not change them if you do not
