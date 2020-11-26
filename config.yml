@@ -121,16 +121,16 @@ params:
   # For help, see the wiki:
   # https://github.com/cstate/cstate/wiki/Customization
   systems:
-    - name: Infrastruktur Nürnberg
+    - name: Intern
+    - name: Hotline
+    - name: Infrastruktur 
       category: Nürnberg
-    - name: Infrastruktur München
+    - name: Infrastruktur 
       category: München
     - name: Netzwerk
       category: Nürnberg
-    - name: Intern
-      category: Nürnberg
-    - name: Hotline
-      category: Nürnberg
+    - name: Netzwerk
+      category: München
     - name: Security
       category: Nürnberg
     - name: Security
