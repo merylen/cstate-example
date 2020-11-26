@@ -120,23 +120,23 @@ params:
   #
   # For help, see the wiki:
   # https://github.com/cstate/cstate/wiki/Customization
-  systems:
+ 
+ systems:
     - name: Intern
-      category: Nürnberg
+      description: Interne Systeme
     - name: Hotline
-      category: Nürnberg
-    - name: Infrastruktur N
-      category: Nürnberg
-    - name: Infrastruktur M
-      category: München
-    - name: Netzwerk N
-      category: Nürnberg
-    - name: Netzwerk M
-      category: München
-    - name: Security N
-      category: Nürnberg
-    - name: Security M
-      category: München
+    - name: Infrastruktur
+      category: Standort Nürnberg
+    - name: Infrastruktur
+      category: Standort München
+    - name: Netzwerk
+      category: Standort Nürnberg
+    - name: Netzwerk
+      category: Standort München
+    - name: Security
+      category: Standort Nürnberg
+    - name: Security
+      category: Standort München
       
       
   # What date format to use?
