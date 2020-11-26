@@ -121,7 +121,7 @@ params:
   # For help, see the wiki:
   # https://github.com/cstate/cstate/wiki/Customization
  
- systems:
+  systems:
     - name: Intern
       description: Interne Systeme
     - name: Hotline
