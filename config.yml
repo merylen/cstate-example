@@ -114,6 +114,9 @@ params:
     - name: Standort München
       description: Standort München
       closed: false
+    - name: Standortübergreifend
+      description: Standortübergreifende Dienste
+      closed: false
 
   # These are your systems. Change them to
   # change the amount of components.
@@ -124,7 +127,9 @@ params:
   systems:
     - name: Intern
       description: Interne Systeme
+      category: Standortübergreifend
     - name: Hotline
+      category: Standortübergreifend
     - name: Infrastruktur
       category: Standort Nürnberg
     - name: Infrastruktur
